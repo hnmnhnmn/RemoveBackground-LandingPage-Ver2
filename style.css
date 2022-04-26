@@ -632,7 +632,7 @@ header label {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 490px) {
   html {
     font-size: 50%;
   }
@@ -665,6 +665,10 @@ header label {
   }
   .ShowInPhone{
     display: block;
+  }
+  #logo{
+    height: 30px;
+    padding: -20px;
   }
 }
 
@@ -1018,3 +1022,8 @@ label {
 .inputBox {
   margin-top: -10px;
 }
+
+
+
+
+
