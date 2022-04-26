@@ -12,9 +12,16 @@
     />
     <link rel="icon" type="image/x-icon" href="images/LogoCompany.png" />
     <script src="script.js" type="text/javascript" defer></script>
-
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="images/people.jpg" as="image" />
+    <link rel="preload" href="images/feature.png" as="image" />
+    <link rel="preload" href="images/people.jpg" as="image" />
+    <link rel="preload" href="images/people-remove.png" as="image" />
+    <!--bootrap starts  -->
+    
+    <!--bootrap ends  -->
   </head>
   <body>
     <!-- header section starts  -->
@@ -25,20 +32,49 @@
       <input type="checkbox" id="menu-bar" />
       <label for="menu-bar" class="fas fa-bars"></label>
 
-      <nav class="navbar">
+      <!-- <nav class="navbar">
         <a href="#home">home</a>
         <a href="#features">features</a>
         <a href="#about">about</a>
         <a href="#review">review</a>
         <a href="#pricing">premium</a>
         <a href="#contact">contact</a>
+      </nav> -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#home">home</a></li>
+          <li>
+            <a href="#features">features</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#review">review</a>
+          </li>
+          <li><a href="#pricing">premium</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <!-- header section ends -->
 
     <!-- home section starts  -->
-
+    <img
+      id="feature"
+      class="reveal ShowInPhone"
+      style="
+        border-radius: 10px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        visibility: hidden;
+      "
+      src="images/feature.png"
+      alt=""
+    />
     <section class="home" id="home">
       <div class="content">
         <h3>best photo editor <span>Remove Background & Edit Photo </span></h3>
@@ -51,41 +87,12 @@
           href="https://play.google.com/store/apps/details?id=com.removebg.backgroundchange2021"
           class="btn"
           ><img
+            class="bounce"
             alt="Download it on google play"
             src="images/getItOnGooglePlay 1 (2).svg"
         /></a>
       </div>
 
-      <!-- <div class="top_pitch_section"> -->
-      <!-- <div style="position: relative; border-radius: 4px; padding: 50px">
-          <div class="responsiveImageContainer">
-            <img
-              src="images/result.jpeg"
-              importance="high"
-              decode="async"
-              alt="Example of clipped image"
-            />
-          </div>
-
-          <div
-            class="responsiveImageContainer fade-in"
-            style="
-              width: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-              padding: 50px;
-            "
-            id="TopAnimationImage"
-          >
-            <img
-              src="images/original.jpeg"
-              importance="high"
-              decode="async"
-              alt="Example of original image"
-            />
-          </div>
-        </div> -->
       <div id="page">
         <div class="wrapper">
           <div class="before">
@@ -119,30 +126,30 @@
 
       <!-- </div> -->
     </section>
+    <!-- <div class="newsletter" style="padding-bottom: 20px"></div> -->
 
-    <a
-      href="https://play.google.com/store/apps/details?id=com.removebg.backgroundchange2021"
-    >
-      <img
-        id="feature"
-        style="
-          display: block;
-          width: 80%;
-          margin-left: auto;
-          margin-right: auto;
-        "
-        src="images/feature.png"
-        alt=""
-      />
-    </a>
+    <img
+      id="feature"
+      class="reveal"
+      style="
+        display: block;
+        border-radius: 10px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+      "
+      src="images/feature.png"
+      alt=""
+    />
 
     <!-- home section ends -->
     <!-- features section starts  -->
 
     <section class="features" id="features">
-      <h1 class="heading">app features</h1>
+      <h1 class="heading reveal">app features</h1>
 
-      <div class="box-container">
+      <!-- <div class="box-container">
         <div class="box">
           <img src="images/background eraser.jpg" alt="" />
           <h3>background eraser</h3>
@@ -173,28 +180,112 @@
           </p>
           <a href="#" class="btn">read more</a>
         </div>
+      </div> -->
+      <div class="box-container">
+        <div class="box reveal">
+          <img src="images/1.png" alt="" />
+          <h3>edit photo</h3>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.removebg.backgroundchange2021"
+            class="btn"
+            >read more</a
+          >
+        </div>
+
+        <div class="box reveal">
+          <img src="images/2.png" alt="" />
+          <h3>background editor</h3>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.removebg.backgroundchange2021"
+            class="btn"
+            >read more</a
+          >
+        </div>
+
+        <div class="box reveal">
+          <img src="images/3.png" alt="" />
+          <h3>change wallpaper</h3>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.removebg.backgroundchange2021"
+            class="btn"
+            >read more</a
+          >
+        </div>
+        <div class="box reveal">
+          <img src="images/4.png" alt="" />
+          <h3>custom style</h3>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.removebg.backgroundchange2021"
+            class="btn"
+            >read more</a
+          >
+        </div>
+
+        <div class="box reveal">
+          <img src="images/5.png" alt="" />
+          <h3>text editor</h3>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.removebg.backgroundchange2021"
+            class="btn"
+            >read more</a
+          >
+        </div>
       </div>
     </section>
 
     <!-- features section ends -->
 
+    <!-- Carrousel section starts  -->
+
+    <!-- Carrousel section ends  -->
+
     <!-- about section starts  -->
 
-    <section class="about" id="about">
+    <section class="about reveal" id="about">
       <h1 class="heading">about the app</h1>
 
       <div class="column">
-        <div class="image">
-          <img src="images/about-img.png" alt="" />
+        <div class="image" style="margin-bottom: -250px">
+          <!-- <img src="images/cat-removebg-xoay-45.png" alt="" /> -->
+          <div style="position: relative; border-radius: 4px; overflow: hidden">
+            <div class="responsiveImageContainer" style="padding-bottom: 75%">
+              <img
+                src="images/cat-remove-45.png"
+                importance="high"
+                decode="async"
+                alt="Example of clipped image"
+              />
+            </div>
+
+            <div
+              class="responsiveImageContainer fade-in"
+              style="
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding-bottom: 75%;
+              "
+              id="TopAnimationImage"
+            >
+              <img
+                src="images/cat-origin-45.png"
+                importance="high"
+                decode="async"
+                alt="Example of original image"
+              />
+            </div>
+          </div>
         </div>
 
         <div class="content">
           <h3>Easy And Perfect Remove Background App For You</h3>
           <p>
             Photo editor with background eraser. Remove Background & Edit Photo
-            is a powerful photo editor & photo cutting app that lets you
-            synthesise the background of your photo anytime, anywhere. It helps
-            you edit your photos background eraser like a pro.
+            is a powerful <strong>photo editor</strong> &
+            <strong>photo Cutting app</strong> that lets you synthesise the
+            background of your photo anytime, anywhere. It helps you edit your
+            photos background eraser like a pro.
           </p>
           <p>
             It's very important to make a picture's background transparent
@@ -221,7 +312,7 @@
 
     <!-- review section starts  -->
 
-    <section class="review" id="review">
+    <section class="review reveal" id="review">
       <h1 class="heading">people's review</h1>
 
       <div class="box-container">
@@ -284,7 +375,7 @@
             </div>
           </div>
         </div>
-        <div class="box">
+        <div class="box boxPhone">
           <i class="fas fa-quote-right"></i>
           <div class="user">
             <img src="images/lee linh.webp" alt="" />
@@ -304,7 +395,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box boxPhone">
           <i class="fas fa-quote-right"></i>
           <div class="user">
             <img src="images/Cobey.webp" alt="" />
@@ -324,7 +415,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box boxPhone">
           <i class="fas fa-quote-right"></i>
           <div class="user">
             <img src="images/meo.webp" alt="" />
@@ -350,7 +441,7 @@
 
     <!-- pricing section starts  -->
 
-    <section class="pricing" id="pricing">
+    <section class="pricing reveal" id="pricing">
       <h1 class="heading">Our Pricing Plans</h1>
 
       <div class="box-container">
@@ -388,12 +479,13 @@
 
     <!-- contact section starts  -->
 
-    <section class="contact" id="contact">
+    <section class="contact reveal" id="contact">
       <div class="image">
         <img src="images/contact-img.png" alt="" />
       </div>
+      <!-- test form -->
 
-      <form action="">
+      <!-- <form action="https://fabform.io/f/brUp7qW" method="post">
         <h1 class="heading">contact us</h1>
 
         <div class="inputBox">
@@ -412,7 +504,51 @@
         </div>
 
         <input type="submit" class="btn" value="send message" />
+      </form> -->
+      <form action="https://fabform.io/f/brUp7qW" method="post">
+        <h1 class="heading">contact us</h1>
+        <label for="Name">Name</label>
+        <div class="inputBox">
+          <input class="" name="Name" type="text" required />
+        </div>
+        <label for="Email">Email</label>
+        <div class="inputBox">
+          <input class="" name="Email" type="email" required />
+        </div>
+        <label for="Message">Message</label>
+        <div class="inputBox">
+          <input
+            class=""
+            name="Message"
+            type="text"
+            cols="30"
+            rows="10"
+            required
+          />
+        </div>
+        <button class="button btn is-link" type="submit">Send mail</button>
       </form>
+
+      <!-- <form action="">
+        <h1 class="heading">contact us</h1>
+
+        <div class="inputBox">
+          <input type="text" required />
+          <label>name</label>
+        </div>
+
+        <div class="inputBox">
+          <input type="email" required />
+          <label>email</label>
+        </div>
+
+        <div class="inputBox">
+          <textarea required name="" id="" cols="30" rows="10"></textarea>
+          <label>message</label>
+        </div>
+
+        <input type="submit" class="btn" value="send message" />
+      </form> -->
     </section>
 
     <!-- contact section edns -->
@@ -421,15 +557,37 @@
 
     <div class="footer">
       <div class="box-container">
-        <div class="box">
-          <h3>about us</h3>
-          <p>We are a product software company in Vietnam.</p>
-        </div>
+        <div class="box"></div>
 
-        <div class="box">
+        <!-- <div class="box">
           <h3>follow us</h3>
           <a href="https://www.facebook.com/lutech.ltd">facebook</a>
           <a href="https://lutech.vn/">Website</a>
+        </div> -->
+        <div class="box">
+          <ul class="wrapperfooter">
+            <a href="https://www.facebook.com/lutech.ltd" target="_blank">
+              <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <span><i class="fab fa-facebook-f"></i></span>
+              </li>
+            </a>
+            <a href="https://lutech.vn/" target="_blank">
+              <li class="icon twitter">
+                <span class="tooltip">Lutech.vn</span>
+                <span><i class="fab fa-weebly"></i></span>
+              </li>
+            </a>
+            <a
+              href="mailto:support@lutech.ltd?subject=Mail from Our Site"
+              target="_blank"
+            >
+              <li class="icon github">
+                <span class="tooltip">support@lutech.ltd</span>
+                <span><i class="fas fa-envelope"></i></span>
+              </li>
+            </a>
+          </ul>
         </div>
 
         <div class="box">
