@@ -251,14 +251,30 @@ document.querySelector(".hello").scrollIntoView({
 // email function starts
 function sendEmail() {
   Email.send({
-    Host : "smtp.gmail.com",
-    Username : "hnmnhnmnemail@gmail.com",
-    Password :  "Hnmnhnmn2",
-    To : 'hnmhnmn2@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "Contact form from Remove Background app",
-    Body : "And this is the body",
+    Host: "smtp.gmail.com",
+    Username: "hnmnhnmnemail@gmail.com",
+    Password: "Hnmnhnmn2",
+    To: "hnmhnmn2@gmail.com",
+    From: document.getElementById("email").value,
+    Subject: "Contact form from Remove Background app",
+    Body: "And this is the body",
   }).then((message) => alert(message));
 }
 
 // email function ends
+
+//test phone size event starts
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.body.style.backgroundColor = "yellow";
+  } else {
+   document.body.style.backgroundColor = "pink";
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+//test phone size event ends
+

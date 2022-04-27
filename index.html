@@ -36,14 +36,7 @@
       <input type="checkbox" id="menu-bar" />
       <label for="menu-bar" class="fas fa-bars"></label>
 
-      <!-- <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#features">features</a>fca
-        <a href="#about">about</a>
-        <a href="#review">review</a>
-        <a href="#pricing">premium</a>
-        <a href="#contact">contact</a>
-      </nav> -->
+      
       <nav class="navbar">
         <ul class="nav-links">
           <li><a href="#home">home</a></li>
@@ -65,22 +58,23 @@
     <!-- header section ends -->
 
     <!-- home section starts  -->
-    <!-- <img
-      id="feature"
-      class="reveal ShowInPhone"
-      style="
-        border-radius: 10px;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 20px;
-        visibility: hidden;
-      "
-      src="images/feature.png"
-      alt=""
-    /> -->
+    
     <section class="home" id="home">
-      <div class="content">
+          <div class="content">
+            <img
+          id="feature"
+          class="hidden"
+          style="
+        
+            border-radius: 10px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+          "
+          src="images/feature.png"
+          alt=""
+        />
         <h3>best photo editor <span>Remove Background & Edit Photo </span></h3>
         <p>
           a powerful photo editor & photo cutting app that lets you synthesise
@@ -128,24 +122,11 @@
         </div>
       </div>
 
-      <!-- </div> -->
+      
     </section>
-    <!-- <div class="newsletter" style="padding-bottom: 20px"></div> -->
+    
 
-    <img
-      id="feature"
-      class="reveal"
-      style="
-        display: none;
-        border-radius: 10px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 20px;
-      "
-      src="images/feature.png"
-      alt=""
-    />
+    
 
     <!-- home section ends -->
     <!-- features section starts  -->
@@ -274,6 +255,39 @@
             >
               <img
                 src="images/cat-origin-45.png"
+                importance="high"
+                decode="async"
+                alt="Example of original image"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- meo thang dung -->
+        <div class="image hidden" style="margin-bottom: -250px">
+          <!-- <img src="images/cat-removebg-xoay-45.png" alt="" /> -->
+          <div style="position: relative; border-radius: 4px; overflow: hidden">
+            <div class="responsiveImageContainer" style="padding-bottom: 75%">
+              <img
+                src="images/cat-result-removebg.png"
+                importance="high"
+                decode="async"
+                alt="Example of clipped image"
+              />
+            </div>
+
+            <div
+              class="responsiveImageContainer fade-in"
+              style="
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding-bottom: 75%;
+              "
+              id="TopAnimationImage"
+            >
+              <img
+                src="images/cat-origin-removebg.png"
                 importance="high"
                 decode="async"
                 alt="Example of original image"
